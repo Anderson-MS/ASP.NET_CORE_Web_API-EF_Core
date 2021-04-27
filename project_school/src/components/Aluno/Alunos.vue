@@ -81,7 +81,7 @@ export default {
 
 <style scoped>
 input{
- 
+  width: calc(100% - 195px); 
   border: 0;
   padding: 20px;
   font-size: 1.3em;
@@ -89,8 +89,9 @@ input{
   display: inline;
 }
 .btnInput{
-  width: 150px;
-  border: 0px;
+  width: 152px;
+  border: none;
+  border-radius: 0px 5px 0px 0px;
   padding: 20px;
   font-size: 1.3em;
   background-color: rgb(128, 189, 170); 
