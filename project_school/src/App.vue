@@ -2,7 +2,7 @@
   <div id="app">
     <Nav></Nav>
       <div class="marginPrincipal">
-        <router-view></router-view>
+        <router-view :key="$route.fullPath"></router-view>
       </div>
   </div>
 </template>
@@ -43,22 +43,21 @@ body, html{
 }
 
 .btn_Danger{
+  font-size: 0.8em !important;
   background-color: rgb(128, 189, 170);
-
-
 }
 
 .btn{
   padding: 10px 20px;
   cursor: pointer;
   border: 1px solid rgb(248, 247, 247);
+  font-size: 1.2em;
   color: white;
   font-weight: bold;
   border-radius: 5px;
 }
 .btn:hover{
-  /* text-shadow: 1px 1px 1px white; */
-  /* margin-top: 3px; */
+  
 }
 table{
   margin: 0px;
@@ -81,5 +80,8 @@ table thead th{
 }
 .colPequeno{
   width: 5%;
+   text-align: right;
+  background-color: rgba(94, 161, 187, 0.712);
+  font-weight: bold;
 }
 </style>
